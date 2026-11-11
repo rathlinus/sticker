@@ -1,0 +1,999 @@
+{
+ "title": "Alle Sticker",
+ "date": "9. November 2026",
+ "sections": [
+  {
+   "id": "bogen",
+   "title": "Auf dem Bogen",
+   "note": "Die Auswahl für den Bogen 50 × 40 cm vom 5. November.",
+   "stickers": [
+    {
+     "file": "svg/97-nvmea.svg",
+     "caption": "97"
+    },
+    {
+     "file": "svg/77-unifi-uno.svg",
+     "caption": "77"
+    },
+    {
+     "file": "svg/158-zigbeepferdchen.svg",
+     "caption": "158"
+    },
+    {
+     "file": "svg/11-tuning.svg",
+     "caption": "11"
+    },
+    {
+     "file": "svg/87-aldap.svg",
+     "caption": "87"
+    },
+    {
+     "file": "svg/14-tuning.svg",
+     "caption": "14"
+    },
+    {
+     "file": "svg/19-warn.svg",
+     "caption": "19"
+    },
+    {
+     "file": "svg/07-main.svg",
+     "caption": "7"
+    },
+    {
+     "file": "svg/20-warn.svg",
+     "caption": "20"
+    },
+    {
+     "file": "svg/36-smarter.svg",
+     "caption": "36"
+    },
+    {
+     "file": "svg/44-dhcp.svg",
+     "caption": "44"
+    },
+    {
+     "file": "svg/04-main.svg",
+     "caption": "4"
+    },
+    {
+     "file": "svg/37-grafanta.svg",
+     "caption": "37"
+    },
+    {
+     "file": "svg/175-haltung4.svg",
+     "caption": "175"
+    },
+    {
+     "file": "svg/163-anlieger.svg",
+     "caption": "163"
+    },
+    {
+     "file": "svg/173-haltung2.svg",
+     "caption": "173"
+    },
+    {
+     "file": "svg/18-warn.svg",
+     "caption": "18"
+    },
+    {
+     "file": "svg/101-vodoofone.svg",
+     "caption": "101"
+    },
+    {
+     "file": "svg/59-tmux.svg",
+     "caption": "59"
+    },
+    {
+     "file": "svg/150-bio.svg",
+     "caption": "150"
+    },
+    {
+     "file": "svg/78-tada.svg",
+     "caption": "78"
+    },
+    {
+     "file": "svg/21-warn.svg",
+     "caption": "21"
+    },
+    {
+     "file": "svg/66-drdocker.svg",
+     "caption": "66"
+    },
+    {
+     "file": "svg/43-failscale.svg",
+     "caption": "43"
+    },
+    {
+     "file": "svg/52-reboot.svg",
+     "caption": "52"
+    },
+    {
+     "file": "svg/104-sad.svg",
+     "caption": "104"
+    },
+    {
+     "file": "svg/107-dmz.svg",
+     "caption": "107"
+    },
+    {
+     "file": "svg/151-haltung.svg",
+     "caption": "151"
+    },
+    {
+     "file": "svg/96-routersport.svg",
+     "caption": "96"
+    },
+    {
+     "file": "svg/53-rootbull.svg",
+     "caption": "53"
+    },
+    {
+     "file": "svg/40-aqku.svg",
+     "caption": "40"
+    },
+    {
+     "file": "svg/81-oh2balken.svg",
+     "caption": "81"
+    },
+    {
+     "file": "svg/51-kasperlsky.svg",
+     "caption": "51"
+    },
+    {
+     "file": "svg/02-main.svg",
+     "caption": "2"
+    },
+    {
+     "file": "svg/42-disco.svg",
+     "caption": "42"
+    },
+    {
+     "file": "svg/143-ohne-cloud.svg",
+     "caption": "143"
+    },
+    {
+     "file": "svg/62-huh.svg",
+     "caption": "62"
+    },
+    {
+     "file": "svg/24-warn.svg",
+     "caption": "24"
+    },
+    {
+     "file": "svg/41-nukiekste.svg",
+     "caption": "41"
+    },
+    {
+     "file": "svg/38-mutter.svg",
+     "caption": "38"
+    },
+    {
+     "file": "svg/03-main.svg",
+     "caption": "3"
+    },
+    {
+     "file": "svg/33-klempner.svg",
+     "caption": "33"
+    },
+    {
+     "file": "svg/25-warn.svg",
+     "caption": "25"
+    },
+    {
+     "file": "svg/174-haltung3.svg",
+     "caption": "174"
+    },
+    {
+     "file": "svg/72-unfug.svg",
+     "caption": "72"
+    },
+    {
+     "file": "svg/26-warn.svg",
+     "caption": "26"
+    }
+   ]
+  },
+  {
+   "id": "holo",
+   "title": "Holo",
+   "note": "Timmerflotte Ultras auf Holofolie für StickerApp. Die Vorschau zeigt einen Lichtwinkel.",
+   "stickers": [
+    {
+     "file": "holo-02.webp",
+     "caption": "2 auf Holofolie",
+     "mm": [
+      44.54,
+      60.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weitere",
+   "title": "Nicht auf dem Bogen",
+   "note": "Noch in der Sammlung, aber nicht gedruckt.",
+   "stickers": [
+    {
+     "file": "svg/145-aquarium.svg",
+     "caption": "145"
+    },
+    {
+     "file": "svg/112-tempo54.svg",
+     "caption": "112"
+    },
+    {
+     "file": "svg/127-adressen.svg",
+     "caption": "127"
+    },
+    {
+     "file": "svg/90-rotkaeppchen.svg",
+     "caption": "90"
+    },
+    {
+     "file": "svg/110-fluchtweg.svg",
+     "caption": "110"
+    },
+    {
+     "file": "svg/82-0und1.svg",
+     "caption": "82"
+    },
+    {
+     "file": "svg/09-main.svg",
+     "caption": "9"
+    },
+    {
+     "file": "svg/65-legacy.svg",
+     "caption": "65"
+    },
+    {
+     "file": "svg/35-zickbee.svg",
+     "caption": "35"
+    },
+    {
+     "file": "svg/153-patient.svg",
+     "caption": "153"
+    },
+    {
+     "file": "svg/80-influenzadb.svg",
+     "caption": "80"
+    },
+    {
+     "file": "svg/108-schaden.svg",
+     "caption": "108"
+    },
+    {
+     "file": "svg/114-beta-an-bord.svg",
+     "caption": "114"
+    },
+    {
+     "file": "svg/149-pfand.svg",
+     "caption": "149"
+    },
+    {
+     "file": "svg/94-dmcrypt.svg",
+     "caption": "94"
+    },
+    {
+     "file": "svg/117-cloud-spuren.svg",
+     "caption": "117"
+    },
+    {
+     "file": "svg/165-datenleck.svg",
+     "caption": "165"
+    },
+    {
+     "file": "svg/57-cronmate.svg",
+     "caption": "57"
+    },
+    {
+     "file": "svg/166-taste.svg",
+     "caption": "166"
+    },
+    {
+     "file": "svg/22-warn.svg",
+     "caption": "22"
+    },
+    {
+     "file": "svg/91-postgres.svg",
+     "caption": "91"
+    },
+    {
+     "file": "svg/16-tuning.svg",
+     "caption": "16"
+    },
+    {
+     "file": "svg/170-bingo.svg",
+     "caption": "170"
+    },
+    {
+     "file": "svg/70-u7pro.svg",
+     "caption": "70"
+    },
+    {
+     "file": "svg/164-usb.svg",
+     "caption": "164"
+    },
+    {
+     "file": "svg/154-strahlung.svg",
+     "caption": "154"
+    },
+    {
+     "file": "svg/74-unofi.svg",
+     "caption": "74"
+    },
+    {
+     "file": "svg/115-rubbellos.svg",
+     "caption": "115"
+    },
+    {
+     "file": "svg/136-kroeten.svg",
+     "caption": "136"
+    },
+    {
+     "file": "svg/109-sdkarte.svg",
+     "caption": "109"
+    },
+    {
+     "file": "svg/120-denkmal.svg",
+     "caption": "120"
+    },
+    {
+     "file": "svg/69-aqaraoke.svg",
+     "caption": "69"
+    },
+    {
+     "file": "svg/155-naturschutz.svg",
+     "caption": "155"
+    },
+    {
+     "file": "svg/122-keine-werbung.svg",
+     "caption": "122"
+    },
+    {
+     "file": "svg/168-lkw.svg",
+     "caption": "168"
+    },
+    {
+     "file": "svg/73-univieh.svg",
+     "caption": "73"
+    },
+    {
+     "file": "svg/23-warn.svg",
+     "caption": "23"
+    },
+    {
+     "file": "svg/128-quartett.svg",
+     "caption": "128"
+    },
+    {
+     "file": "svg/85-pfusch.svg",
+     "caption": "85"
+    },
+    {
+     "file": "svg/00-main.svg",
+     "caption": "0"
+    },
+    {
+     "file": "svg/31-surf.svg",
+     "caption": "31"
+    },
+    {
+     "file": "svg/100-telekommt.svg",
+     "caption": "100"
+    },
+    {
+     "file": "svg/113-lange-yaml.svg",
+     "caption": "113"
+    },
+    {
+     "file": "svg/140-cookie.svg",
+     "caption": "140"
+    },
+    {
+     "file": "svg/48-chatgti.svg",
+     "caption": "48"
+    },
+    {
+     "file": "svg/28-smarthome.svg",
+     "caption": "28"
+    },
+    {
+     "file": "svg/56-signal.svg",
+     "caption": "56"
+    },
+    {
+     "file": "svg/148-spielzeug.svg",
+     "caption": "148"
+    },
+    {
+     "file": "svg/133-kabelfahne.svg",
+     "caption": "133"
+    },
+    {
+     "file": "svg/116-zigbeus.svg",
+     "caption": "116"
+    },
+    {
+     "file": "svg/49-crowdstreik.svg",
+     "caption": "49"
+    },
+    {
+     "file": "svg/15-tuning.svg",
+     "caption": "15"
+    },
+    {
+     "file": "svg/60-ldap.svg",
+     "caption": "60"
+    },
+    {
+     "file": "svg/125-router-dot.svg",
+     "caption": "125"
+    },
+    {
+     "file": "svg/50-mckaffee.svg",
+     "caption": "50"
+    },
+    {
+     "file": "svg/54-dbquery.svg",
+     "caption": "54"
+    },
+    {
+     "file": "svg/88-addc.svg",
+     "caption": "88"
+    },
+    {
+     "file": "svg/132-steckdose.svg",
+     "caption": "132"
+    },
+    {
+     "file": "svg/146-unwetter.svg",
+     "caption": "146"
+    },
+    {
+     "file": "svg/61-wirecard.svg",
+     "caption": "61"
+    },
+    {
+     "file": "svg/135-qr.svg",
+     "caption": "135"
+    }
+   ]
+  },
+  {
+   "id": "produkte",
+   "title": "Produktparodien",
+   "note": "Die Sticker zu den Produktparodien.",
+   "stickers": [
+    {
+     "file": "svg/p-yn.svg",
+     "caption": "[Y/n]"
+    },
+    {
+     "file": "svg/p-absolutpath.svg",
+     "caption": "Absolut Path"
+    },
+    {
+     "file": "svg/p-primzahl.svg",
+     "caption": "Amazon Primzahl"
+    },
+    {
+     "file": "svg/p-blendamett.svg",
+     "caption": "blend-a-mett"
+    },
+    {
+     "file": "svg/p-brandzwieback.svg",
+     "caption": "Brand Zwieback"
+    },
+    {
+     "file": "svg/p-brutto.svg",
+     "caption": "Brutto"
+    },
+    {
+     "file": "svg/p-bugbounty.svg",
+     "caption": "Bug Bounty"
+    },
+    {
+     "file": "svg/p-bugs.svg",
+     "caption": "Bug's"
+    },
+    {
+     "file": "svg/p-build.svg",
+     "caption": "BUILD"
+    },
+    {
+     "file": "svg/p-cunda.svg",
+     "caption": "CA"
+    },
+    {
+     "file": "svg/p-cannot.svg",
+     "caption": "Cannot"
+    },
+    {
+     "file": "svg/p-clubmathe.svg",
+     "caption": "Club-Mathe"
+    },
+    {
+     "file": "svg/p-zerotrust.svg",
+     "caption": "Coca-Cola Zero Trust"
+    },
+    {
+     "file": "svg/p-edekaputt.svg",
+     "caption": "Edekaputt"
+    },
+    {
+     "file": "svg/p-fehlmann.svg",
+     "caption": "Fehlmann"
+    },
+    {
+     "file": "svg/p-fritzkola.svg",
+     "caption": "FRITZ!Kola"
+    },
+    {
+     "file": "svg/p-hackwolfskin.svg",
+     "caption": "Hack Wolfskin"
+    },
+    {
+     "file": "svg/p-hohescpp.svg",
+     "caption": "Hohes C++"
+    },
+    {
+     "file": "svg/p-hornbatch.svg",
+     "caption": "Hornbatch"
+    },
+    {
+     "file": "svg/p-instabilo.svg",
+     "caption": "Instabilo BOSS"
+    },
+    {
+     "file": "svg/p-irreal.svg",
+     "caption": "Irreal"
+    },
+    {
+     "file": "svg/p-isdn.svg",
+     "caption": "ISDN"
+    },
+    {
+     "file": "svg/p-jaegermain.svg",
+     "caption": "Jägermain"
+    },
+    {
+     "file": "svg/p-kabel.svg",
+     "caption": "Kabel"
+    },
+    {
+     "file": "svg/p-kerrygoldbarren.svg",
+     "caption": "Kerrygold Barren"
+    },
+    {
+     "file": "svg/p-knurr.svg",
+     "caption": "Knurr"
+    },
+    {
+     "file": "svg/p-laufhansa.svg",
+     "caption": "Laufhansa"
+    },
+    {
+     "file": "svg/p-lint.svg",
+     "caption": "Lint Excellence"
+    },
+    {
+     "file": "svg/p-mediamurks.svg",
+     "caption": "MediaMurks"
+    },
+    {
+     "file": "svg/p-monorepoly.svg",
+     "caption": "Monorepoly"
+    },
+    {
+     "file": "svg/p-netfix.svg",
+     "caption": "Netfix"
+    },
+    {
+     "file": "svg/p-nimm2fa.svg",
+     "caption": "Nimm2FA"
+    },
+    {
+     "file": "svg/p-opi.svg",
+     "caption": "OPI"
+    },
+    {
+     "file": "svg/p-paystation.svg",
+     "caption": "PayStation"
+    },
+    {
+     "file": "svg/p-pdf.svg",
+     "caption": "PDF"
+    },
+    {
+     "file": "svg/p-phisherman.svg",
+     "caption": "Phisherman's Friend"
+    },
+    {
+     "file": "svg/p-pingles.svg",
+     "caption": "Pingles"
+    },
+    {
+     "file": "svg/p-pypal.svg",
+     "caption": "PyPal"
+    },
+    {
+     "file": "svg/p-regex.svg",
+     "caption": "RegEx"
+    },
+    {
+     "file": "svg/p-rtfm.svg",
+     "caption": "RTFM"
+    },
+    {
+     "file": "svg/p-seitenstecher.svg",
+     "caption": "Seitenstecher"
+    },
+    {
+     "file": "svg/p-sparbucks.svg",
+     "caption": "Sparbucks"
+    },
+    {
+     "file": "svg/p-spite.svg",
+     "caption": "Spite"
+    },
+    {
+     "file": "svg/p-stickers.svg",
+     "caption": "Stickers"
+    },
+    {
+     "file": "svg/p-subnet.svg",
+     "caption": "Subnet"
+    },
+    {
+     "file": "svg/p-suppreme.svg",
+     "caption": "Suppreme"
+    },
+    {
+     "file": "svg/p-targz.svg",
+     "caption": "tar.gz"
+    },
+    {
+     "file": "svg/p-telnet.svg",
+     "caption": "Telnet"
+    },
+    {
+     "file": "svg/p-testla.svg",
+     "caption": "Testla"
+    },
+    {
+     "file": "svg/p-thermomist.svg",
+     "caption": "Thermomist"
+    },
+    {
+     "file": "svg/p-tupperwaise.svg",
+     "caption": "Tupperwaise"
+    }
+   ]
+  },
+  {
+   "id": "oktober",
+   "title": "Erste Vorschläge",
+   "note": "Sechs Vorschläge vom 23. Oktober für den Sticker-Exchange beim Gastspiel. Die Quelldateien gibt es nicht mehr, die Sticker stammen aus sticker-vorschlaege.pdf, in der Größe, die dort steht.",
+   "stickers": [
+    {
+     "file": "svg/okt-1-warnschild.svg",
+     "caption": "Warnschild"
+    },
+    {
+     "file": "svg/okt-2-weckglas.svg",
+     "caption": "Weckglas"
+    },
+    {
+     "file": "svg/okt-3-button.svg",
+     "caption": "Button"
+    },
+    {
+     "file": "svg/okt-4-like-abo-glocke.svg",
+     "caption": "Like, Abo, Glocke"
+    },
+    {
+     "file": "svg/okt-5-stempel.svg",
+     "caption": "Stempel"
+    },
+    {
+     "file": "svg/okt-6-acht-arme.svg",
+     "caption": "Acht Arme"
+    }
+   ]
+  },
+  {
+   "id": "frueh",
+   "title": "Illustrierte Fassungen",
+   "note": "Vier gezeichnete Fassungen aus dem Ordner stickers im Datenkrake-Repo.",
+   "stickers": [
+    {
+     "file": "svg/frueh-1-doppel-nat.svg",
+     "caption": "Doppel-NAT"
+    },
+    {
+     "file": "svg/frueh-2-breaking-changes.svg",
+     "caption": "Breaking Changes"
+    },
+    {
+     "file": "svg/frueh-3-sensortionell.svg",
+     "caption": "Sensortionell"
+    },
+    {
+     "file": "svg/frueh-4-zuhause.svg",
+     "caption": "Zuhause"
+    }
+   ]
+  },
+  {
+   "id": "raus",
+   "title": "Aussortiert",
+   "note": "Am 3. und 4. November aus der Sammlung genommen.",
+   "stickers": [
+    {
+     "file": "svg/75-uniwhy.svg",
+     "caption": "75"
+    },
+    {
+     "file": "svg/152-joghurt.svg",
+     "caption": "152"
+    },
+    {
+     "file": "svg/162-alexa.svg",
+     "caption": "162"
+    },
+    {
+     "file": "svg/99-radlos.svg",
+     "caption": "99"
+    },
+    {
+     "file": "svg/63-chatgez.svg",
+     "caption": "63"
+    },
+    {
+     "file": "svg/123-geflasht.svg",
+     "caption": "123"
+    },
+    {
+     "file": "svg/13-tuning.svg",
+     "caption": "13"
+    },
+    {
+     "file": "svg/160-kasse.svg",
+     "caption": "160"
+    },
+    {
+     "file": "svg/39-schelly.svg",
+     "caption": "39"
+    },
+    {
+     "file": "svg/103-nonedrive.svg",
+     "caption": "103"
+    },
+    {
+     "file": "svg/08-main.svg",
+     "caption": "8"
+    },
+    {
+     "file": "svg/17-tuning.svg",
+     "caption": "17"
+    },
+    {
+     "file": "svg/142-farbtest.svg",
+     "caption": "142"
+    },
+    {
+     "file": "svg/84-vodafont.svg",
+     "caption": "84"
+    },
+    {
+     "file": "svg/95-meister.svg",
+     "caption": "95"
+    },
+    {
+     "file": "svg/05-main.svg",
+     "caption": "5"
+    },
+    {
+     "file": "svg/76-unifoen.svg",
+     "caption": "76"
+    },
+    {
+     "file": "svg/129-sektor.svg",
+     "caption": "129"
+    },
+    {
+     "file": "svg/147-heizbett.svg",
+     "caption": "147"
+    },
+    {
+     "file": "svg/105-delle.svg",
+     "caption": "105"
+    },
+    {
+     "file": "svg/86-arduino.svg",
+     "caption": "86"
+    },
+    {
+     "file": "svg/139-entlaufen.svg",
+     "caption": "139"
+    },
+    {
+     "file": "svg/137-wlan-pegel.svg",
+     "caption": "137"
+    },
+    {
+     "file": "svg/98-outluck.svg",
+     "caption": "98"
+    },
+    {
+     "file": "svg/93-snack.svg",
+     "caption": "93"
+    },
+    {
+     "file": "svg/169-ereignis.svg",
+     "caption": "169"
+    },
+    {
+     "file": "svg/06-main.svg",
+     "caption": "6"
+    },
+    {
+     "file": "svg/46-protzmox.svg",
+     "caption": "46"
+    },
+    {
+     "file": "svg/47-tippex.svg",
+     "caption": "47"
+    },
+    {
+     "file": "svg/124-kabelsalat.svg",
+     "caption": "124"
+    },
+    {
+     "file": "svg/171-glueckskeks.svg",
+     "caption": "171"
+    },
+    {
+     "file": "svg/118-zehenzettel.svg",
+     "caption": "118"
+    },
+    {
+     "file": "svg/89-pleite.svg",
+     "caption": "89"
+    },
+    {
+     "file": "svg/111-blister.svg",
+     "caption": "111"
+    },
+    {
+     "file": "svg/01-main.svg",
+     "caption": "1"
+    },
+    {
+     "file": "svg/58-rustwurst.svg",
+     "caption": "58"
+    },
+    {
+     "file": "svg/102-outluck.svg",
+     "caption": "102"
+    },
+    {
+     "file": "svg/157-traueranzeige.svg",
+     "caption": "157"
+    },
+    {
+     "file": "svg/119-vermieter.svg",
+     "caption": "119"
+    },
+    {
+     "file": "svg/27-warn.svg",
+     "caption": "27"
+    },
+    {
+     "file": "svg/167-andreaskreuz.svg",
+     "caption": "167"
+    },
+    {
+     "file": "svg/92-githubschrauber.svg",
+     "caption": "92"
+    },
+    {
+     "file": "svg/161-fundbuero.svg",
+     "caption": "161"
+    },
+    {
+     "file": "svg/130-mhd.svg",
+     "caption": "130"
+    },
+    {
+     "file": "svg/156-knoellchen.svg",
+     "caption": "156"
+    },
+    {
+     "file": "svg/55-wd40.svg",
+     "caption": "55"
+    },
+    {
+     "file": "svg/131-ei.svg",
+     "caption": "131"
+    },
+    {
+     "file": "svg/32-nat.svg",
+     "caption": "32"
+    },
+    {
+     "file": "svg/10-main.svg",
+     "caption": "10"
+    },
+    {
+     "file": "svg/159-wachsmal.svg",
+     "caption": "159"
+    },
+    {
+     "file": "svg/138-kreide.svg",
+     "caption": "138"
+    },
+    {
+     "file": "svg/79-knax.svg",
+     "caption": "79"
+    },
+    {
+     "file": "svg/45-uhuntu.svg",
+     "caption": "45"
+    },
+    {
+     "file": "svg/141-captcha.svg",
+     "caption": "141"
+    },
+    {
+     "file": "svg/12-tuning.svg",
+     "caption": "12"
+    },
+    {
+     "file": "svg/121-vermisst.svg",
+     "caption": "121"
+    },
+    {
+     "file": "svg/172-roboter.svg",
+     "caption": "172"
+    },
+    {
+     "file": "svg/83-bandbreite.svg",
+     "caption": "83"
+    },
+    {
+     "file": "svg/134-postit.svg",
+     "caption": "134"
+    },
+    {
+     "file": "svg/144-kroete-zigbee.svg",
+     "caption": "144"
+    },
+    {
+     "file": "svg/64-rewert.svg",
+     "caption": "64"
+    },
+    {
+     "file": "svg/71-unifix.svg",
+     "caption": "71"
+    },
+    {
+     "file": "svg/29-ont.svg",
+     "caption": "29"
+    },
+    {
+     "file": "svg/106-faxbook.svg",
+     "caption": "106"
+    },
+    {
+     "file": "svg/126-stempelkarte.svg",
+     "caption": "126"
+    },
+    {
+     "file": "svg/30-kampf.svg",
+     "caption": "30"
+    }
+   ]
+  }
+ ]
+}
