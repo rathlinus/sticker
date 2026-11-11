@@ -1,4 +1,5 @@
-"""Builds index.html: every sticker from stickers.json on one page, each file inlined as a data URI.
+"""Builds index.html: every sticker from stickers.json on one sheet, in the order the file lists them,
+each file inlined as a data URI.
 
     python build.py
 
@@ -14,7 +15,6 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 PX_PER_MM = 3.9
-REPO = "https://github.com/rathlinus/sticker"
 
 
 def size_mm(s):
@@ -45,10 +45,10 @@ def sticker(it):
         mime = {".webp": "image/webp", ".png": "image/png", ".jpg": "image/jpeg"}[path.suffix]
         uri = f"data:{mime};base64," + base64.b64encode(path.read_bytes()).decode()
     c = html.escape(it["caption"])
-    return (f'<figure class="st"><button type="button" class="zoom" data-file="{path.name}" data-cap="{c}" '
+    return (f'<button type="button" class="zoom" data-file="{path.name}" data-cap="{c}" '
             f'data-mm="{w:.0f} × {h:.0f} mm" aria-label="{c} groß ansehen">'
             f"<img src='{uri}' alt=\"{c}\" width=\"{round(w * PX_PER_MM)}\" height=\"{round(h * PX_PER_MM)}\" "
-            f'loading="lazy" decoding="async"></button><figcaption>{c}</figcaption></figure>')
+            f'loading="lazy" decoding="async"></button>')
 
 
 HEAD = """<!DOCTYPE html>
@@ -57,40 +57,29 @@ HEAD = """<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Alle Sticker</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&family=Barlow:wght@400;500&display=swap">
 <style>
-  /* Header with an index of the sections, then one grey desk per section; stickers wrap at true size to each other (3.9 px per mm). One dark look on purpose, so white die-cut borders stay visible. */
-  :root { --bg: #1a1a19; --desk: #4a4a46; --fg: #ececea; --muted: #a2a29a; --rule: #3a3a36; --focus: #f2c230;
-    --head: 'Barlow Semi Condensed', 'Arial Narrow', sans-serif; --body: Barlow, system-ui, 'Segoe UI', sans-serif; color-scheme: dark; }
-  body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.5;
-    padding-block: 32px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
-  main { display: grid; gap: 40px; }
-  header { display: grid; gap: 12px; }
-  h1, h2 { font-family: var(--head); font-weight: 700; margin: 0; text-wrap: balance; }
-  h1 { font-size: 30px; line-height: 1.1; }
-  h2 { font-size: 22px; line-height: 1.2; }
-  p { margin: 0; color: var(--muted); max-width: 70ch; }
-  a { color: var(--fg); text-underline-offset: 3px; }
-  a:hover { text-decoration-color: var(--focus); }
-  .n { color: var(--muted); font-family: var(--body); font-weight: 400; font-size: .8em; font-variant-numeric: tabular-nums; }
-  nav { display: flex; flex-wrap: wrap; gap: 6px 20px; padding-top: 4px; border-top: 1px solid var(--rule); }
-  section { display: grid; gap: 12px; min-width: 0; scroll-margin-top: 16px; }
-  .sh { display: grid; gap: 2px; }
-  .desk { background: var(--desk); border-radius: 8px; padding: clamp(12px, 3vw, 32px); display: flex; flex-wrap: wrap;
-    gap: 20px 24px; align-items: flex-end; justify-content: center; }
-  .st { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 4px; max-width: 100%; min-width: 0; }
+  /* One grey sheet with every sticker at true size to each other (3.9 px per mm). One dark look on purpose, so white die-cut borders stay visible. */
+  :root { --bg: #1a1a19; --desk: #4a4a46; --fg: #ececea; --muted: #a2a29a; --focus: #f2c230; color-scheme: dark; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, 'Segoe UI', sans-serif;
+    padding: 16px max(16px, env(safe-area-inset-right, 0px)) 16px max(16px, env(safe-area-inset-left, 0px)); }
+  main { background: var(--desk); border-radius: 8px; padding: clamp(12px, 3vw, 32px); display: flex; flex-wrap: wrap;
+    gap: 16px 20px; align-items: center; justify-content: center; }
   .zoom { all: unset; display: block; cursor: zoom-in; max-width: 100%; border-radius: 4px; }
   .zoom:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; }
-  .st img { display: block; height: auto; max-width: 100%; }
-  figcaption { font-size: 12px; line-height: 1.3; color: var(--fg); opacity: .7; text-align: center; font-variant-numeric: tabular-nums; }
+  .zoom img { display: block; height: auto; max-width: 100%; }
+  main.packed { display: block; position: relative; }
+  .packed .zoom { position: absolute; }
+  .packed .zoom img { width: 100%; }
   dialog { border: 0; padding: 24px; background: var(--desk); color: var(--fg); border-radius: 8px; max-width: calc(100vw - 32px); box-sizing: border-box; }
   dialog::backdrop { background: rgb(0 0 0 / .75); }
   dialog img { display: block; margin: 0 auto; max-width: 100%; height: auto; }
   .dl { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 16px; margin-top: 16px; }
-  .dl p { color: var(--fg); }
-  .dl span { color: var(--muted); }
+  .dl p { margin: 0; }
+  .dl span + span { color: var(--muted); }
   .acts { display: flex; gap: 16px; align-items: baseline; }
-  #close { font: 500 15px/1 var(--body); color: var(--fg); background: var(--bg); border: 1px solid var(--muted); border-radius: 4px; padding: 8px 14px; cursor: pointer; }
+  a { color: var(--fg); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--focus); }
+  #close { font: 500 15px/1 system-ui, 'Segoe UI', sans-serif; color: var(--fg); background: var(--bg); border: 1px solid var(--muted); border-radius: 4px; padding: 8px 14px; cursor: pointer; }
   #close:hover { border-color: var(--fg); }
   #close:focus-visible, #save:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 </style>
@@ -100,6 +89,64 @@ HEAD = """<!DOCTYPE html>
 
 SCRIPT = """<script>
 (() => {
+  // Nest the stickers like a printed sheet: in list order, each goes to the highest free spot (skyline packing
+  // of the bounding boxes), then the whole block is centred. Stickers wider than the sheet shrink to fit.
+  const sheet = document.querySelector("main"), G = 16;
+  const items = [...sheet.querySelectorAll(".zoom")].map((b) => {
+    const i = b.querySelector("img");
+    return { b, w: +i.getAttribute("width"), h: +i.getAttribute("height") };
+  });
+  let lastW = 0;
+  function pack() {
+    const cs = getComputedStyle(sheet);
+    const W = sheet.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    if (Math.abs(W - lastW) < 1) return;
+    lastW = W;
+    let sky = [{ x: 0, y: 0, w: W }], right = 0, bottom = 0;
+    const pos = items.map((it) => {
+      const s = Math.min(1, W / it.w), w = it.w * s, h = it.h * s;
+      let best = null;
+      for (let i = 0; i < sky.length; i++) {
+        const x = sky[i].x;
+        if (x + w > W + 0.5) break;
+        let y = 0;
+        for (let j = i; j < sky.length && sky[j].x < x + w; j++) y = Math.max(y, sky[j].y);
+        if (!best || y < best.y) best = { x, y };
+      }
+      const { x, y } = best, x2 = x + w + G, next = [];
+      for (const seg of sky) {
+        const end = seg.x + seg.w;
+        if (end <= x || seg.x >= x2) next.push(seg);
+        else {
+          if (seg.x < x) next.push({ x: seg.x, y: seg.y, w: x - seg.x });
+          if (end > x2) next.push({ x: x2, y: seg.y, w: end - x2 });
+        }
+      }
+      next.push({ x, y: y + h + G, w: x2 - x });
+      next.sort((a, b) => a.x - b.x);
+      sky = [];
+      for (const seg of next) {
+        const l = sky[sky.length - 1];
+        if (l && l.y === seg.y && Math.abs(l.x + l.w - seg.x) < 0.01) l.w += seg.w;
+        else sky.push({ ...seg });
+      }
+      right = Math.max(right, x + w);
+      bottom = Math.max(bottom, y + h);
+      return { x, y, w };
+    });
+    // absolute positions start at the padding edge, so add the padding back in
+    const left = parseFloat(cs.paddingLeft) + (W - right) / 2, top = parseFloat(cs.paddingTop);
+    items.forEach((it, k) => {
+      it.b.style.left = left + pos[k].x + "px";
+      it.b.style.top = top + pos[k].y + "px";
+      it.b.style.width = pos[k].w + "px";
+    });
+    sheet.style.height = bottom + "px";
+    sheet.classList.add("packed");
+  }
+  pack();
+  new ResizeObserver(pack).observe(sheet);
+
   // Click a sticker to see it large; the file can be saved from there. The size in mm stays in the caption.
   const dlg = document.getElementById("big"), img = document.getElementById("bigimg"), save = document.getElementById("save");
   const cap = document.getElementById("bigcap"), mm = document.getElementById("bigmm");
@@ -131,21 +178,11 @@ DIALOG = ('<dialog id="big"><img id="bigimg" alt=""><div class="dl"><p><span id=
 
 def main():
     data = json.loads((HERE / "stickers.json").read_text(encoding="utf-8"))
-    nav, body = [], []
-    total = 0
-    for sec in data["sections"]:
-        n = len(sec["stickers"])
-        total += n
-        nav.append(f'<a href="#{sec["id"]}">{html.escape(sec["title"])} <span class="n">{n}</span></a>')
-        body.append(f'<section id="{sec["id"]}"><div class="sh"><h2>{html.escape(sec["title"])} <span class="n">{n}</span></h2>'
-                    f'<p>{sec["note"]}</p></div><div class="desk">{"".join(sticker(it) for it in sec["stickers"])}</div></section>')
-    intro = (f'{total} Sticker in echter Größe zueinander, Stand {data["date"]}. Ein Klick zeigt einen Sticker groß. '
-             f'Alle Dateien liegen einzeln im <a href="{REPO}">Repo</a>.')
-    main_ = (f'<main><header><h1>{html.escape(data["title"])}</h1><p>{intro}</p><nav>{"".join(nav)}</nav></header>'
-             f'{"".join(body)}</main>{DIALOG}')
+    stickers = data["stickers"]
+    page = f'<main>{"".join(sticker(it) for it in stickers)}</main>{DIALOG}'
     out = HERE / "index.html"
-    out.write_text(HEAD + main_ + "\n" + SCRIPT, encoding="utf-8", newline="\n")
-    print(f"{total} stickers, index.html {out.stat().st_size / 2**20:.1f} MB")
+    out.write_text(HEAD + page + "\n" + SCRIPT, encoding="utf-8", newline="\n")
+    print(f"{len(stickers)} stickers, index.html {out.stat().st_size / 2**20:.1f} MB")
 
 
 if __name__ == "__main__":
